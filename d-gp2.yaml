@@ -1,0 +1,12 @@
+image:
+  repository: onstream-cmp.docker.imovetv.com/cmp-property
+  tag: latest
+ingress:
+  hosts:
+  - d-cmpproperty.movetv.com
+  - d-cmpproperty.imovetv.com
+cmp-property:
+  replicas:
+    max: 1
+    min: 1
+revisionHistoryLimit: 3
